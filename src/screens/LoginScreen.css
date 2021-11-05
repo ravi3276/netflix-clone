@@ -1,0 +1,105 @@
+.loginScreen{
+    background-color: #fff;
+    position: relative;
+    background:
+    url('https://assets.nflxext.com/ffe/siteui/vlv3/b77751c7-0e02-4941-af39-30514ff6b3e2/d0f20efa-f2f3-49d4-92b2-b3b1f6312af5/IN-en-20211026-popsignuptwoweeks-perspective_alpha_website_small.jpg')
+    center no-repeat;
+    background-size: cover;
+}
+
+.loginScreen__logo{
+    position: fixed;
+    width: 100px;
+    object-fit: contain;
+    top: 20px;
+    left: 20px;
+}
+
+.loginScreen__btn{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 7px 17px;
+    border:none;
+    outline: none;
+    background-color: #e50914;
+    color: #fff;
+    font-size:1rem;
+    font-weight:400;
+    border-radius:3px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.loginScreen__gradient{
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background: rgba(0,0,0,0.6);
+    background-image:linear-gradient(
+        to top,
+        rgba(0,0,0,0.8) 0,
+        rgba(0,0,0,0) 60%,
+        rgba(0,0,0,0.8) 100%,
+
+    )
+}
+
+.loginScreen__body{
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    /* left: 25%; */
+    margin-left:25%;
+    margin-right:25%;
+    text-align:center;
+    place-items: center;
+    z-index: 1;
+    padding: 20px;
+    left: 0;
+    right: 0;
+}
+
+.loginScreen__body > h1{
+    font-size:3.125rem;
+    max-width: 640px;
+    max-width: 0 auto;
+    line-height: 1;
+}
+
+.loginScreen__body>h2{
+    font-size:1.625rem;
+    max-width: 640px;
+    margin: 1rem auto;
+    font-weight: 500;
+}
+
+.loginScreen__body>h3{
+    font-size:1.25rem;
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+.loginScreen__input{
+    margin: 30px;
+}
+
+.loginScreen__input > form > input{
+    padding:10px;
+    /* border: none; */
+    outline: none;
+    width: 30%;
+    max-width:600px;
+    height:29px;
+}
+
+.loginScreen__button{
+    padding:16px 20px;
+    color: #fff;
+    text-transform: capitalize;
+    font-size:1rem;
+    border: none;
+    background-color: #e50914;
+    font-weight: 600;
+    cursor: pointer;
+}

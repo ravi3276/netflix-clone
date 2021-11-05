@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import './Banner.css';
 import requests from './request';
 import axios from './axios';
+import Typewriter from 'typewriter-effect';
+
 function Banner() {
     const [movie, setMovie] = useState([]);
     useEffect(() => {
@@ -36,6 +38,13 @@ function Banner() {
                     <button className="banner__button">my list</button>
                 </div>
                 <h1 className="banner__discription">
+                    {/* <Typewriter 
+                        options={{
+                            strings: movie.overview,
+                            autoStart: true,
+                            loop: true,
+                        }}
+                    /> */}
                     {turncate(movie.overview, 150)}
                 </h1>
             </div>
