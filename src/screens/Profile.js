@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { selectUser } from '../features/userSlice';
 import { auth } from '../firebase';
 import Nav from '../Nav';
+import PlanScreen from './PlanScreen';
 import './Profile.css';
 
 function Profile() {
@@ -22,7 +23,7 @@ function Profile() {
                         <div className="profile__plans">
                             <h3>plans</h3>
                             <div className="plan__details">
-
+                                <PlanScreen />
                             </div>
                         </div>
 
